@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeper</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Link Css -->
+
+    <!-- Link Fonte -->
+    <link href="https://fonts.cdnfonts.com/css/dirtyline-36daysoftype-2022" rel="stylesheet">
+    <!-- Link Fonte -->
+
+</head>
+<body>
+
+    <div class="fundo">
+        <div class="retangulo"></div>
+        <div class="imagens">
+            <div class="imgd">
+                <a href="criesout.html"><img src="img/deeper.jpg" id="deeper"></a>
+            </div>
+            <div class="musica" id="playm">
+                <img src="img/play.PNG" id="icon">
+                <p>Clique para dar play</p>
+            </div>
+            <div class="imgg">
+                <a href="https://www.instagram.com/4g.alpha/"><img src="img/4gpng.png" id="forg"></a>
+            </div>
+        </div>
+        <div>
+            <p id="profundo">Quer descobrir algo mais profundo?
+                Clique na imagem e descubra!</p>
+        </div>
+    </div>
+
+    <audio id="mySong" src="msc/Deep1.mp3" loop>
+        <source src="img/play.PNG" type="audio/mp3">
+    </audio>
+
+    <script>
+
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mySong.paused){
+                mySong.play();
+                icon.src = "img/pause.PNG"
+            } else { 
+                mySong.pause();
+                icon.src = "img/play.PNG"
+            }
+
+        }
+        
+
+    </script>
+
+</body>
+</html>

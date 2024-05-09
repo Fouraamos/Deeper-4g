@@ -1,0 +1,234 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head img {
+    width: 100%;
+    height: 99.6vh;
+}
+
+p {
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    color: blue;
+}
+
+.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vaivir p {
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 100px;
+    color: white;
+    background: blue;
+    border-radius: 20px 50px 20px 50px;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.sim {
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    align-items: center;
+    font-size: 30px;
+    border: 0;
+    padding: 10px;
+    background: blue;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    margin-left: -110px;
+ }
+ 
+ .nao {
+    font-family: 'Dirtyline 36Daysoftype 2022', sans-serif;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    border: 0;
+    padding: 10px;
+    background: blue;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    margin-left: 115px;
+ }
+
+ .fundo { 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left bottom, blue 40%, white);
+}
+
+.musica {
+    display: flex;
+    cursor: pointer;
+    padding: 3px;
+    background: blue;
+    margin-top: -10px;
+    border-radius: 10px 10px 30px 30px;
+    padding-bottom: 20px;
+    width: 420px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.musica p {
+    font-size: 30px;
+    margin-top: 38px;
+    color: white;
+}
+
+.musica:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
+#icon {
+    margin-top: 20px;
+    width: 60px;
+}
+
+.gif {
+    padding: 10px;
+    background: blue; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media screen and (max-width: 950px){
+    
+    .vaivir p {
+        font-size: 70px;
+    }
+
+    .gif {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .musica {
+        background: blue;
+        width: 300px;
+        margin-top: -10px;
+    }
+
+    .musica p {
+        font-size: 20px;
+        margin-top: 32px;
+    }
+
+    #icon {
+        margin-top: 20px;
+        width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 670px){
+    
+    .vaivir p {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .gif {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .musica {
+        background: blue;
+        width: 300px;
+        margin-top: -10px;
+    }
+
+    .musica p {
+        font-size: 20px;
+    }
+
+    #icon {
+        margin-top: 20px;
+        width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 463px){
+
+    .vaivir p {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .gif {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .musica {
+        background: blue;
+        width: 330px;
+        margin-top: -10px;
+    }
+
+    .musica p {
+        font-size: 20px;
+    }
+
+    #icon {
+        margin-top: 20px;
+        width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    body { 
+        background: blue;
+    }
+
+    .fundo{
+        background-image: none;
+    }
+    
+    .vaivir p {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .gif {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .musica {
+        background: blue;
+        width: 330px;
+        margin-top: -10px;
+    }
+
+    .musica p {
+        font-size: 20px;
+    }
+
+    #icon {
+        margin-top: 20px;
+        width: 40px;
+    }
+
+}
